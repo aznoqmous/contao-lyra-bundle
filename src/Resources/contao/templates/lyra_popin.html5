@@ -1,0 +1,14 @@
+<script type="text/javascript"
+        src="<?= $this->domainUrl ?>/static/js/krypton-client/V4.0/stable/kr-payment-form.min.js"
+        kr-public-key="<?= $this->publicKey ?>"
+        kr-post-url-success="<?= $this->successUrl ?>"
+        kr-language="fr-FR"
+></script>
+
+<!--  theme NEON should be loaded in the HEAD section   -->
+<link rel="stylesheet"
+      href="<?= $this->domainUrl ?>/static/js/krypton-client/V4.0/ext/neon-reset.css">
+<script src="<?= $this->domainUrl ?>/static/js/krypton-client/V4.0/ext/neon.js"></script>
+
+<div class="kr-embedded" kr-popin kr-form-token="<?= $this->formToken; ?>">
+</div>

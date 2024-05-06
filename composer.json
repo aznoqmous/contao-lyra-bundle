@@ -1,0 +1,53 @@
+{
+    "name": "aznoqmous/contao-lyra-bundle",
+    "description": "Lyra of a contao bundle automatically loaded by Contao Manager",
+    "version": "0.0.1",
+    "type": "contao-bundle",
+    "keywords": [
+        "contao",
+        "aznoqmous"
+    ],
+    "authors": [
+        {
+            "name": "Aznoqmous",
+            "homepage": "https://www.aznoqmous.fr"
+        },
+        {
+            "name": "Paul LANDREAU",
+            "email": "plandreau@aznoqmous.fr",
+            "homepage": "https://github.com/aznoqmous",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "support@aznoqmous.fr"
+    },
+    "require":{
+        "php":"^7.4",
+        "contao/core-bundle":"^4.13"
+    },
+    "require-dev": {
+        "contao/manager-plugin": "^2.0"
+    },
+    "conflict": {
+        "contao/core": "*",
+        "contao/manager-plugin": "<2.0 || >=3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Aznoqmous\\ContaoLyraBundle\\": "src/"
+        },
+        "classmap": [
+            "src/Resources/contao/"
+        ],
+        "exclude-from-classmap": [
+            "src/Resources/contao/config/",
+            "src/Resources/contao/dca/",
+            "src/Resources/contao/languages/",
+            "src/Resources/contao/templates/"
+        ]
+    },
+    "extra":{
+        "contao-manager-plugin": "Aznoqmous\\ContaoLyraBundle\\ContaoManager\\Plugin"
+    }
+}

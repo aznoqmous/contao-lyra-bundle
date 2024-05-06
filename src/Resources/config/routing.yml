@@ -1,0 +1,3 @@
+api_lyra:
+  resource: "@AznoqmousContaoLyraBundle/Controller/LyraController.php"
+  type: annotation

@@ -1,0 +1,19 @@
+@layer lyra {
+  .badge {
+    color: white;
+    --background: #0ebcd3;
+    background: var(--background);
+    border-radius: 0.5em;
+    padding: 0.2em 0.4em;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-shadow: 0 0.1 0.2em rgba(black, 0.2);
+    box-shadow: 0 0.1 0.2em rgba(black, 0.2);
+    &.badge-valid {
+      --background: #50af4c;
+    }
+    &.badge-error {
+      --background: #d3320e;
+    }
+  }
+}

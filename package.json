@@ -1,0 +1,24 @@
+{
+  "name": "contao-lyra-bundle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "start": "webpack --watch --mode development",
+    "build": "webpack --mode production"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.18",
+    "autoprefixer": "^10.4",
+    "babel-loader": "^8.2",
+    "css-loader": "^6.7",
+    "mini-css-extract-plugin": "^2.6",
+    "node-sass": "^7.0",
+    "sass": "^1.53",
+    "sass-loader": "^13.0",
+    "webpack": "^5.73",
+    "webpack-cli": "^4.10"
+  }
+}
